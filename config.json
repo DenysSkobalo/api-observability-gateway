@@ -1,0 +1,13 @@
+{
+  "proxy_port": ":8080",
+  "metrics_port": ":8081",
+  "routing": [
+    {
+      "path": "/api/v1",
+      "upstreams": [
+        "http://127.0.0.1:9001",
+        "http://127.0.0.1:9002"
+      ]
+    }
+  ]
+}
